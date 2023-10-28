@@ -17,7 +17,7 @@ const [ex, setEx] = useState([]);
 const [loading, setLoading] = useState(true);
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/clase/api/apunte/');
+      const response = await axios.get('http://localhost:8000/clase/api/apunte/'); // cambiar direcion ip
       setEx(response.data);
       setLoading(false);
     } catch (error) {
